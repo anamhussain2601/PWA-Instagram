@@ -38,7 +38,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "/index.html",
+  "start_url": "127.0.0.1:8080/index.html",
   "scope": ".",
   "display": "standalone",
   "orientation": "portrait-primary",

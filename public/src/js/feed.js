@@ -5,11 +5,11 @@ var closeCreatePostModalButton = document.querySelector('#close-create-post-moda
 function openCreatePostModal() {
   createPostArea.style.display = 'block';
   if (deferredPrompt) {
+    console.log(deferredPrompt, 'deferredPrompt')
+
     deferredPrompt.prompt();
-console.log('hi')
     deferredPrompt.userChoice.then(function(choiceResult) {
-      console.log(choiceResult.outcome);
-      console.log('kn')
+      console.log(choiceResult, 'choiceResult'); //{outcome: "accepted" platform: "web"}
 
       if (choiceResult.outcome === 'dismissed') {
         console.log('User cancelled installation');
