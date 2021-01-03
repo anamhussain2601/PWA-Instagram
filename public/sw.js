@@ -89,7 +89,7 @@ self.addEventListener('fetch', function (event) {
                     var tx = db.transaction( 'posts', 'readwrite')
                     var store =  tx.objectStore('posts')
                     store.put(data[key] )
-                    return tx.complete
+                    return tx.complete 
 
                   })
                 }
